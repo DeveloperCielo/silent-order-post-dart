@@ -4,7 +4,7 @@ A Flutter package that helps to use Cielo's Silent Order Post.
 
 ## Usage
 
-These operations must be performed using its specific key (Client Id, Client Secret and Merchand Id) in the respective environment endpoints.
+These operations must be performed using its specific key (Merchand Id) in the respective environment endpoints.
 
 ```dart
 var sop = SilentOrderPost(merchantId: "YOUR-MERCHANT-ID", environment: Environment.SANDBOX);

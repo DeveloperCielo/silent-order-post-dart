@@ -1,0 +1,19 @@
+name: cielo_silent_order_post
+description: A Flutter package that helps to use Cielo's Silent Order Post.
+version: 1.0.0
+homepage: https://github.com/developercielo/cielo-silent-order-post-dart
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+  flutter: ">=1.17.0 <2.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^0.12.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:

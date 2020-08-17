@@ -27,9 +27,9 @@ class ModelState {
   List<String> securityCode;
 
   factory ModelState.fromJson(Map<String, dynamic> json) => ModelState(
-    holderName: List<String>.from(json["request.HolderName"].map((x) => x)),
-    rawNumber: List<String>.from(json["request.RawNumber"].map((x) => x)),
-    expiration: List<String>.from(json["request.Expiration"].map((x) => x)),
-    securityCode: List<String>.from(json["request.SecurityCode"].map((x) => x)),
+    holderName: (json["request.HolderName"] != null) ? List<String>.from(json["request.HolderName"]?.map((x) => x)) : List<String>(),
+    rawNumber: (json["request.RawNumber"] != null) ? List<String>.from(json["request.RawNumber"]?.map((x) => x)) : List<String>(),
+    expiration: (json["request.Expiration"] != null) ? List<String>.from(json["request.Expiration"]?.map((x) => x)) : List<String>(),
+    securityCode: (json["request.SecurityCode"] != null) ? List<String>.from(json["request.SecurityCode"]?.map((x) => x)) : List<String>(),
   );
 }
